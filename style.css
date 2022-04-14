@@ -1,0 +1,138 @@
+.header{
+    background-color: #1C1C1C;
+    height: 100px;
+
+}
+.link{
+    display: flex;
+    justify-content:flex-end     ;
+    align-items: center;
+    color: #FFF;
+    list-style-type: none;
+}
+.link li{
+    font-size: 1.2em;
+    padding: 20px;
+    
+}
+.link li :hover{
+    background: darkgray;
+}
+.link  a{
+    
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.black-logo{
+    background-color: #1C1C1C;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gray-intro{
+    background-color: #F1F0EE;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column      ;
+}
+.text1{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 100px;
+    color: #FFF;
+    z-index: 1;
+    text-align: center;
+ 
+}
+.text2{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 100px;
+    z-index: 1;
+    color: #FFF;
+}
+.inspect{
+    border: none;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-top: 550px;
+    z-index: 1;
+    margin-left: 100px;
+    background: #1C1C1C;
+    color: #FFF;
+    transition : 0.4s linear;   
+    box-shadow: inset 0 0 0 0 #F1F0EE;
+    
+}
+.inspect:hover {
+    box-shadow: inset 400px 0 0 0 #F1F0EE;
+    color: #1C1C1C !important;
+    font-weight:bold;
+    border:1px solid #1c1c1c;
+}
+.inspect2{
+    border: none;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    margin-top: 550px;
+    z-index: 1;
+    margin-left: 100px;
+    background: #F1F0EE;
+    transition : 0.4s linear;   
+    box-shadow: inset 0 0 0 0 #F1F0EE;
+
+}
+.inspect2:hover {
+    box-shadow: inset 400px 0 0 0 #4E8D7C;
+    color: #1C1C1C !important;
+    font-weight:bold;
+    border:1px solid #1c1c1c;
+}
+* {
+    box-sizing: border-box;
+  }
+.container{
+}
+.box-ac{
+    background-color: #F1F0EE;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.box-b{
+    background-color: #1C1C1C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+footer{
+    background: #1C1C1C;
+    color:#F1F0EE;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer-link li{
+    padding: 10px;
+}
