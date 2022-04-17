@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="Img/logo.PNG" type="image/x-icon" />
+
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-        <div class="container">
 
             <!----------HEADER---------->
         <div class="row header" >
@@ -193,7 +194,12 @@
         </div>
         <div class="col-4 box-ac">
             <div>
-                <img src="Img/img44.jpg" style="width: 200px; height: 200px;" alt="">
+                <a href="http://*******com">
+                    <img src="Img/img44.jpg"
+                     width="200" height="200"
+                     onmouseover="this.src='Img/img33.jpeg'"
+                     onmouseout="this.src='Img/img44.jpg'"
+               /></a>
                 <h5>Çok Kriterli Karar Verme Nedir?</h5>
                 <p>Karar problemleri ,  çözümde kullanılan yöntemler ve bulunması gereken çözümlerin durumuna göre çok farklıdır. Çok sayıda birbiriyle çelişen kriterin/tutumun söz konusu olduğu durumda alınan karar çok kriterli karar verme olarak bilinir.</p>
             </div>
@@ -214,8 +220,8 @@
         </div>
     </div>
     <footer>
-        <div class="row">
-            <div class="col footer-link">
+        <div class="row" style="width: 100%;">
+            <div class="col-4 footer-link">
                 <li>Anasayfa</li>
                 <li>Hakkımızda</li>
                 <li>Services</li>
@@ -224,17 +230,19 @@
 
 
             </div>
-            <div class="col-3">
+            <div class="col-4">
               <img src="Img/logo.PNG" style="width: 100%;" alt="">
 
             </div>
-            <div class="col">
+            <div class="col-4" style="display: flex; justify-content: center;">
                 <div>
                     <h5>E-BÜLTEN</h5>
-                    <p>Yeniliklerden ve fırsatlardan haberdar olmak için kaydolun!</p>
-                    <input type="text">
-                    <button class="inspect2">Kaydol</button>
-
+                    <p>Geri Bildirimleriniz Bizim İçin Önemli!</p>
+                    <a href="mailto:omerturan085@gmail.com">
+                        <input type="mail" >
+                    </a>  
+                    <br>
+                    <button  style="margin-top: 1em;" class="inspect2">Mail yolla</button>
                 </div>
                 
              
@@ -244,7 +252,6 @@
     </footer>
 
 
-</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

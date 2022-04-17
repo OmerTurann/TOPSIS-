@@ -15,7 +15,7 @@
     padding: 20px;
     
 }
-.link li :hover{
+.link li:hover{
     background: darkgray;
 }
 .link  a{
@@ -79,12 +79,8 @@
 }
 .inspect2{
     border: none;
-    width: 200px;
-    height: 50px;
     position: absolute;
-    margin-top: 550px;
     z-index: 1;
-    margin-left: 100px;
     background: #F1F0EE;
     transition : 0.4s linear;   
     box-shadow: inset 0 0 0 0 #F1F0EE;
@@ -99,8 +95,7 @@
 * {
     box-sizing: border-box;
   }
-.container{
-}
+
 .box-ac{
     background-color: #F1F0EE;
     color: black;
@@ -124,6 +119,7 @@ footer{
     color:#F1F0EE;
     height: 300px;
     display: flex;
+    margin-top: 5em;
     align-items: center;
 }
 .footer-link{
