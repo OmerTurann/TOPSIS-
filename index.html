@@ -17,9 +17,11 @@
 </head>
 
 <body>
+    <div class="container">
 
     <!----------HEADER---------->
     <div class="row header">
+        
         <div class="col-4">
             <img src="Img/logo.PNG" alt="" style="width: 300px; height: 100px;">
 
@@ -65,83 +67,108 @@
         </div>
 
     </div>
+    
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>Alternatiflerinizi Oluşturun</h3>
+                <p class="blue-text">5 Tane Alternatif Yazın<br> Aşağıdaki Kısımda da Seçeneklerinizi Oluşturun</p>
+                <div class="card">
+                    <h5 class="text-center mb-4">Alternatifler ve Önem Derecesi</h5>
+                    <form class="form-card" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
 
-    <div class="row" style="margin-top: 3em;">
-        <div class="col-6">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <tr>
-                            <td></td>
-                            <td>Alternatiflerinizi Giriniz</td>
-                            <td>Önem Derecesini Giriniz</td>
-                        </tr>
-                      
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td scope="col"><input type="text" placeholder="Alternatif 11"></td>
-                        <td scope="col"><input type="text" placeholder="Alternatif 33"></td>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="txt1" value="" name="fname" placeholder="Alternatif 1" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="coefficient-1" value=""  placeholder="Özellik 1" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="choose-1" value=""  placeholder="Önem Derecesi 1" onblur="validate(1)">
+                                </div>
+
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="txt2" value="" name="fname" placeholder="Alternatif 2" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="coefficient-2" value=""  placeholder="Özellik 2" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="choose-2" value=""  placeholder="Önem Derecesi 1" onblur="validate(1)">
+                                </div>
+
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="txt3" value="" name="fname" placeholder="Alternatif 3" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="coefficient-3" value=""  placeholder="Özellik 3" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="choose-3" value=""  placeholder="Önem Derecesi 1" onblur="validate(1)">
+                                </div>
+
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="txt4" value="" name="fname" placeholder="Alternatif 4" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="coefficient-4" value=""  placeholder="Özellik 4" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="choose-4" value=""  placeholder="Önem Derecesi 1" onblur="validate(1)">
+                                </div>
+
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="txt5" value="" name="fname" placeholder="Alternatif 5" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="coefficient-5" value=""  placeholder="Özellik 5" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-4 flex-column d-flex">
+                                    <input type="text" id="choose-5" value=""  placeholder="Önem Derecesi 1" onblur="validate(1)">
+                                </div>
+                                
+                                                
+                            <div class="form-group col-sm-12">
+                                <button type="submit" id="showData" onclick="saveData()" class="btn-block btn-primary">Kaydet</button>
+                            </div>
 
 
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-                        <td scope="col"><input type="text" placeholder="Alternatif 1"></td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-6 gray-intro">
-            <h3>Tanıtım</h3>
-            <p>
-                Bu Sayfa Uludağ Üniversitesi Yönetim Bilişim Sistemleri Öğrencileri Tarafından Karar Destek Sistemleri Dersinin
-                Proje ödevi olarak tasarlanmıştır. 
-            </p>
-            <p>
-                inif@uludag.edu.tr
-            </p>
-            <p>
-                Adres : Bursa Uludağ Üniversitesi İnegöl İşletme Fakültesi
-
-            </p>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-
+   
+    <div class="col-12">
+        <h3 style="text-align: center;">Seçeneklerinizi Oluşturun</h3>
+    </div>
     <div class="row" style="margin-top: 3em;">
         <div class="col-12">
             <table class="table table-striped">
                 <thead>
                     <tr>
                     <tr>
-                        <td>Seçenekler</td>
-                        <td><label for="">Seçenek 1 </label></td>
-                        <td><label for="">Seçenek 2</label></td>
-                        <td><label for="">Seçenek 3</label></td>
-                        <td><Label for=""></Label>Seçenek 4</td>
-                        <td><Label for=""></Label>Seçenek 5</td>
+                        <td> 
+                            <h5>TOPSIS</h5>
+                        </td>
+                        <td> 
+                            <label  id="prop-1" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </td>
+                        <td>
+                            <label  id="prop-2" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </td>
+                        <td>
+                            <label  id="prop-3" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </td>
+                        <td>
+                            <label  id="prop-4" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </td>
+                        <td>
+                            <label  id="prop-5" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </td>
 
                     </tr>
               
@@ -149,7 +176,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">  
+                            <label  id="data-1" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </th>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text" name="" id=""></td>
@@ -157,7 +186,9 @@
                         <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
+                        <th scope="row">       
+                             <label id="data-2" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </th>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text" name="" id=""></td>
@@ -165,7 +196,9 @@
                         <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
+                        <th scope="row">
+                            <label id="data-3" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </th>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text" name="" id=""></td>
@@ -173,7 +206,9 @@
                         <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr>
-                        <th scope="row">4</th>
+                        <th scope="row">
+                            <label id="data-4" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </th>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text" name="" id=""></td>
@@ -181,7 +216,9 @@
                         <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr>
-                        <th scope="row">5</th>
+                        <th scope="row">
+                            <label id="data-5" class="form-control-label px-3"><span class="text-danger">Sonuç</span></label>
+                        </th>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
                         <td><input type="text" name="" id=""></td>
@@ -191,90 +228,30 @@
                 </tbody>
             </table>
         </div>
+        <div class="col-12 d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#girisyap">
+            <button class="showAnswer">Sonuçları Göster</button>
+        </div>
+              
+        <!-- Modal -->
+        <div class="modal fade modal-xl" id="girisyap" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Serhat Akbaş</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
-    <!-- <table class="table table-dark table-striped">
-        <thead>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="col">####</th>
-                <th scope="col">Alternatif 1</th>
-                <th scope="col">Alternatif 2</th>
-                <th scope="col">Alternatif 3</th>
-                <th scope="col">Alternatif 4</th>
-                <th scope="col">Alternatif 5</th>
-
-
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Alternatifler</th>
-                <td><input type="text" name="" id="" placeholder="Birinci Alternatifi Gir"></td>
-                <td><input type="text" name="" id="" placeholder="İkinci Alternatifi Gir"></td>
-                <td><input type="text" name="" id="" placeholder="Üçüncü Alternatifi Gir"></td>
-                <td><input type="text" name="" id="" placeholder="Dördüncü Alternatifi Gir"></td>
-                <td><input type="text" name="" id="" placeholder="Beşinci Alternatifi Gir"></td>
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Önem Sırasını Giriniz</th>
-                <td><input type="text" name="" id="" placeholder="0 ile 1 Arasında Değer Gir"></td>
-                <td><input type="text" name="" id="" placeholder="0 ile 1 Arasında Değer Gir"></td>
-                <td><input type="text" name="" id="" placeholder="0 ile 1 Arasında Değer Gir"></td>
-                <td><input type="text" name="" id="" placeholder="0 ile 1 Arasında Değer Gir"></td>
-                <td><input type="text" name="" id="" placeholder="0 ile 1 Arasında Değer Gir"></td>
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Seçenek 1 <input style="width: 150px;" type="text"
-                        name="" id=""></th>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Seçenek 2 <input style="width: 150px;" type="text"
-                        name="" id=""></th>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Seçenek 3 <input style="width: 150px;" type="text"
-                        name="" id=""></th>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Seçenek 4 <input style="width: 150px;" type="text"
-                        name="" id=""></th>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-
-            </tr>
-            <tr>
-                <th style="border-right: 1px solid gray;" scope="row">Seçenek 5 <input style="width: 150px;" type="text"
-                        name="" id=""></th>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-                <td><input type="text" name="" id=""></td>
-
-            </tr>
-
-        </tbody>
-    </table> -->
+    
     <div class="row" style="margin-top: 3em;">
         <div class="col-12" style="display: flex; justify-content: center; margin-bottom: 2em;">
             <h3>Services</h3>
@@ -340,7 +317,10 @@
             </div>
         </div>
     </footer>
+    <!-- Button trigger modal -->
 
+
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -354,8 +334,69 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script>
 
+        function textboxToLabel(lblConversionFactor, txtConversionFactor) {
+        document.getElementById(lblConversionFactor).innerHTML = 
+        document.getElementById(txtConversionFactor).value;
+        }
 
+                // ALTERNATİFLER
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("data-1", "txt1");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("data-2", "txt2");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("data-3", "txt3");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("data-4", "txt4");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("data-5", "txt5");
+        });
+
+                // ÖZELLİKLER
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("prop-1", "coefficient-1");
+        });
+        
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("prop-2", "coefficient-2");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("prop-3", "coefficient-3");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("prop-4", "coefficient-4");
+        });
+
+        document.getElementById("showData").addEventListener("click", function() {
+            textboxToLabel("prop-5", "coefficient-5");
+        }); 
+
+        // MODAL
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+        })
+
+    </script>
+    
 
 
 </body>

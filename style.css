@@ -6,6 +6,7 @@ body{
     height: 100px;
 
 }
+
 .link{
     display: flex;
     justify-content:flex-end     ;
@@ -44,6 +45,10 @@ body{
     justify-content: center;
     flex-direction: column      ;
 }
+.card{
+    padding: 25px;
+}
+
 .text1{
     position: absolute;
     margin-top: 450px;
@@ -74,6 +79,7 @@ body{
     color: #FFF;
     transition : 0.4s linear;   
     box-shadow: inset 0 0 0 0 #F1F0EE;
+    cursor: pointer;
     
 }
 .inspect:hover {
@@ -89,10 +95,27 @@ body{
     background: #F1F0EE;
     transition : 0.4s linear;   
     box-shadow: inset 0 0 0 0 #F1F0EE;
+    cursor: pointer;
 
 }
 .inspect2:hover {
     box-shadow: inset 400px 0 0 0 #4E8D7C;
+    color: #1C1C1C !important;
+    font-weight:bold;
+    border:1px solid #1c1c1c;
+}
+.showAnswer{
+    border: none;
+    width: 400px;
+    height: 50px;
+    background: #1C1C1C;
+    color: #FFF;
+    transition : 0.4s linear;   
+    box-shadow: inset 0 0 0 0 #F1F0EE;
+    cursor: pointer;
+}
+.showAnswer:hover {
+    box-shadow: inset 400px 0 0 0 #F1F0EE;
     color: #1C1C1C !important;
     font-weight:bold;
     border:1px solid #1c1c1c;
