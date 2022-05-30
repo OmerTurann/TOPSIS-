@@ -84,7 +84,7 @@ body{
 }
 .inspect:hover {
     box-shadow: inset 400px 0 0 0 #F1F0EE;
-    color: #1C1C1C !important;
+    color: #383333 !important;
     font-weight:bold;
     border:1px solid #1c1c1c;
 }
@@ -104,6 +104,23 @@ body{
     font-weight:bold;
     border:1px solid #1c1c1c;
 }
+
+.go-data{
+    border: none;
+    width: 200px;
+    height: 50px;
+    background: #1C1C1C;
+    color: #FFF;
+    transition : 0.4s linear;   
+    box-shadow: inset 0 0 0 0 #F1F0EE;
+    cursor: pointer;
+}
+.go-data:hover{
+    box-shadow: inset 400px 0 0 0 #F1F0EE;
+    color: #383333 !important;
+    font-weight:bold;
+    border:1px solid #1c1c1c;
+}   
 .showAnswer{
     border: none;
     width: 400px;
